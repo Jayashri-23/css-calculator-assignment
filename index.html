@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>  
+
+<head>
     <title>Calculator</title>
+    <link rel="stylesheet" href="./ds-digital-cufonfonts-webfont/style.css" >
     <style>
-        .calculator-body{
+        @font-face {
+            font-family: 'DS-Digital Normal';
+            font-style: normal;
+            font-weight: normal;
+            src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+        }
+
+        .calculator-body {
             height: 300px;
             width: 250px;
             background-color: #3d3d5c;
@@ -12,7 +21,8 @@
             padding: 20px;
             padding-top: 40px;
         }
-        .screen{
+
+        .screen {
             background-color: #a1af77;
             text-align: right;
             width: 220px;
@@ -21,16 +31,19 @@
             font-size: 25px;
             padding: 5px 10px;
             margin-bottom: 20px;
+            font-family: "DS-Digital Normal" ;
         }
-        .buttons-container{
+
+        .buttons-container {
             height: 200px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center; 
+            align-items: center;
         }
-        .btn{
+
+        .btn {
             height: 30px;
             width: 50px;
             text-align: center;
@@ -41,23 +54,26 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .btn:hover{
+
+        .btn:hover {
             box-shadow: 0 0 5px 0 #fff;
             transition: 0.5s;
         }
-        .btn-equals{
+
+        .btn-equals {
             background-color: #ff6348;
             height: 70px;
             color: white;
         }
     </style>
 </head>
+
 <body>
     <div class="calculator-body">
-        <input type="text" value="0" class="screen"/>
+        <input type="text" value="0" class="screen" />
 
         <div class="buttons-container">
-            
+
             <button class="btn">AC</button>
             <button class="btn">7</button>
             <button class="btn">4</button>
@@ -83,4 +99,5 @@
         </div>
     </div>
 </body>
+
 </html>
